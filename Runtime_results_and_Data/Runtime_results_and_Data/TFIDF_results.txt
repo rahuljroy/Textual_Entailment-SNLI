@@ -1,0 +1,153 @@
+############################# TFIDF Results ##########################
+
+Dataset: No Preprocessing
+
+l1_ratio=None
+Iter=300
+tol=0.001
+Method: Add
+
+Confusion Matrix:
+
+0.5046
+[[   0   36   97   43]
+ [   0 1253 1431  553]
+ [   0  438 2484  446]
+ [   0  524 1386 1309]]
+               precision    recall  f1-score   support
+
+            -       0.00      0.00      0.00       176
+contradiction       0.56      0.39      0.46      3237
+   entailment       0.46      0.74      0.57      3368
+      neutral       0.56      0.41      0.47      3219
+
+     accuracy                           0.50     10000
+    macro avg       0.39      0.38      0.37     10000
+ weighted avg       0.51      0.50      0.49     10000
+
+######################################
+
+
+Dataset: No Preprocessing
+
+l1_ratio=0.1
+Iter=300
+tol=0.001
+Method: Subtract
+
+Confusion Matrix:
+
+0.5782
+[[   0   26   89   61]
+ [  10 1442 1076  709]
+ [   5  348 2496  519]
+ [   8  378  989 1844]]
+               precision    recall  f1-score   support
+
+            -       0.00      0.00      0.00       176
+contradiction       0.66      0.45      0.53      3237
+   entailment       0.54      0.74      0.62      3368
+      neutral       0.59      0.57      0.58      3219
+
+     accuracy                           0.58     10000
+    macro avg       0.45      0.44      0.43     10000
+ weighted avg       0.58      0.58      0.57     10000
+
+#####################################
+
+Dataset: No Preprocessing
+
+l1_ratio=0.1
+Iter=300
+tol=0.001
+Method: Multiply
+
+Confusion Matrix:
+
+0.3237
+[[   0  176    0    0]
+ [   0 3237    0    0]
+ [   0 3368    0    0]
+ [   0 3219    0    0]]
+               precision    recall  f1-score   support
+
+            -       0.00      0.00      0.00       176
+contradiction       0.32      1.00      0.49      3237
+   entailment       0.00      0.00      0.00      3368
+      neutral       0.00      0.00      0.00      3219
+
+     accuracy                           0.32     10000
+    macro avg       0.08      0.25      0.12     10000
+ weighted avg       0.10      0.32      0.16     10000
+
+##############################################################################################################
+Dataset: with Preprocessing
+
+l1_ratio=0.1
+Iter=300
+tol=0.001
+Method: sub
+
+0.5345
+[[   0   19  102   55]
+ [  11 1259 1373  594]
+ [   5  257 2640  466]
+ [  11  343 1419 1446]]
+               precision    recall  f1-score   support
+
+            -       0.00      0.00      0.00       176
+contradiction       0.67      0.39      0.49      3237
+   entailment       0.48      0.78      0.59      3368
+      neutral       0.56      0.45      0.50      3219
+
+     accuracy                           0.53     10000
+    macro avg       0.43      0.41      0.40     10000
+ weighted avg       0.56      0.53      0.52     10000
+
+#############################
+Dataset: with Preprocessing
+
+l1_ratio=0.1
+Iter=300
+tol=0.001
+Method: add
+
+0.4348
+[[   0   26  129   21]
+ [   0 1119 1896  222]
+ [   0  432 2704  232]
+ [   0  532 2162  525]]
+               precision    recall  f1-score   support
+
+            -       0.00      0.00      0.00       176
+contradiction       0.53      0.35      0.42      3237
+   entailment       0.39      0.80      0.53      3368
+      neutral       0.53      0.16      0.25      3219
+
+     accuracy                           0.43     10000
+    macro avg       0.36      0.33      0.30     10000
+ weighted avg       0.47      0.43      0.39     10000
+
+#############################
+Dataset: with Preprocessing
+
+l1_ratio=0.1
+Iter=300
+tol=0.001
+Method: mul
+
+0.324
+[[   0  174    0    2]
+ [   0 3158    2   77]
+ [   0 3245   12  111]
+ [   0 3143    6   70]]
+               precision    recall  f1-score   support
+
+            -       0.00      0.00      0.00       176
+contradiction       0.32      0.98      0.49      3237
+   entailment       0.60      0.00      0.01      3368
+      neutral       0.27      0.02      0.04      3219
+
+     accuracy                           0.32     10000
+    macro avg       0.30      0.25      0.13     10000
+ weighted avg       0.39      0.32      0.17     10000
