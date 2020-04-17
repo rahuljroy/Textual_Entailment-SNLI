@@ -8,7 +8,6 @@ import torch.optim as optim
 import time
 from torch.autograd import Variable
 
-import dill
 import sys
 from torchtext import data
 from torchtext import datasets
